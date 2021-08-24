@@ -1,0 +1,32 @@
+{
+    "PetStore": {
+        "name": "Pet Store",
+        "description": "FIS Pipeline and Infrastructure",
+        "published": true,
+        "aws_region": "us-east-2",
+        "aws_api_id": "8nw17jg2gd",
+        "aws_api_stage_name": "miguel-example",
+        "aws_api_host": "apigateway.us-east-2.amazonaws.com",
+        "aws_api_path": "/restapis/8nw17jg2gd/stages/miguel-example/exports/swagger"
+    },
+    "UberExample": {
+        "name": "Uber Example",
+        "description": "FIS Pipeline and Infrastructure",
+        "published": true,
+        "aws_region": "us-east-2",
+        "aws_api_id": "sr6oumhesf",
+        "aws_api_stage_name": "miguel-uber",
+        "aws_api_host": "apigateway.us-east-2.amazonaws.com",
+        "aws_api_path": "/restapis/sr6oumhesf/stages/miguel-uber/exports/swagger"
+    },
+    "HiddenStore": {
+        "name": "Hidden Store",
+        "description": "FIS Pipeline and Infrastructure",
+        "published": false,
+        "aws_region": "us-east-2",
+        "aws_api_id": "8nw17jg2gd",
+        "aws_api_stage_name": "miguel-example",
+        "aws_api_host": "apigateway.us-east-2.amazonaws.com",
+        "aws_api_path": "/restapis/8nw17jg2gd/stages/miguel-example/exports/swagger"
+    }
+}
