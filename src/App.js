@@ -5,10 +5,11 @@ import ApisConfig from './apis_config.json';
 import Sidebar from './Sidebar.js'
 import crypto from 'crypto-js';
 
-const AWS_ACCESS_KEY_ID = "AKIARTD76VJNX4XVTCVT"
-const AWS_SECRET_ACCESS_KEY = "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"
+const AWS_ACCESS_KEY_ID = process.env.REACT_APP_AWS_ACCESS_KEY_ID
+const AWS_SECRET_ACCESS_KEY = process.env.REACT_APP_AWS_SECRET_ACCESS_KEY
 class App extends Component {
   constructor(props) {
+    console.log(process.env)
     super(props);
     this.state = {
       organizationConfig: null,
@@ -61,7 +62,7 @@ class App extends Component {
       
       // get the various date formats needed to form our request
       var now  =  new Date();
-      var amzDate = this.getAmzDate(now.toISOString())
+      var amzDate = this.getAmzDate(now.toISOString()) //20210824T191736Z
       var authDate = amzDate.split("T")[0]
       
       // we have an empty payload here because it is a GET request
